@@ -14,7 +14,7 @@ int main() {
           cin>>v[i];
       }
       
-      unordered_map<int,int>m;
+     
       
       for(int i=0;i<n;i++)
       {

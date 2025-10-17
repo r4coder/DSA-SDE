@@ -1,26 +1,14 @@
-#include <bits/stdc++.h>
-using namespace std;
-
-
-int main() {
-      int n;
-      cin>>n;
-      vector<int>v(n);
-      vector<int>temp;
-      int count=0;
-      
-      for(int i=0;i<n;i++)
+class Solution {
+public:
+    void moveZeroes(vector<int>& nums) {
+        int n=nums.size();
+        vector<int>temp;
+        int count=0;
+    for(int i=0;i<n;i++)
       {
-          cin>>v[i];
-      }
-      
-     
-      
-      for(int i=0;i<n;i++)
-      {
-             if(v[i]>0)
+             if(nums[i]>0||nums[i]<0)
              {
-                 temp.push_back(v[i]);
+                 temp.push_back(nums[i]);
                  count++;
              }
          
@@ -33,13 +21,8 @@ int main() {
       
       for(int i=0;i<n;i++)
       {
-          cout<<temp[i];
+          nums[i]=temp[i];
       }
-      
-      
-      
-          
-
-
-    return 0;
-}
+        
+    }
+};

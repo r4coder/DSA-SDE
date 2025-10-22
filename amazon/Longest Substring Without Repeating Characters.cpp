@@ -14,7 +14,7 @@ int main()
   {
        mp[s[j]]++;
        
-       if(mp[s[j]]>1)
+       while(mp[s[j]]>1)
        {
            mp[s[i]]--;
            i++;
